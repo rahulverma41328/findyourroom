@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/card_test_image"
+            app:riv_corner_radius="10dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/post_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/acme"
+                android:text="Location"
+                android:textColor="@color/app_text_color" />
+
+
+            <TextView
+                android:id="@+id/post_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_location"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/acme"
+                android:text="this is the you are looking for"
+                android:textColor="@color/app_text_color" />
+
+            <TextView
+                android:id="@+id/room_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/card_post_rate_background"
+                android:fontFamily="@font/acme"
+                android:padding="5dp"
+                android:text="₹1200" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-10dp"
+                android:layout_toRightOf="@+id/username_profile"
+                android:background="@drawable/username_background"
+                android:fontFamily="@font/acme"
+                android:includeFontPadding="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:text="username"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/username_profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/default_user_profile_image" />
+
+            <TextView
+                android:id="@+id/user_post_more_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/username_background"
+                android:fontFamily="@font/acme"
+                android:includeFontPadding="false"
+                android:padding="5dp"
+                android:text="more details"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/delete_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/username_background"
+                android:src="@drawable/delete_menu" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

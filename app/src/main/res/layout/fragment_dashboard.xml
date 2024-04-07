@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_background_color"
+    tools:context=".User.MainFragment.DashboardHome">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_text_color"
+        android:text="rooms for you"
+        android:fontFamily="@font/bungee"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/relative_layout_background">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_bar"
+            style="@style/SearchViewStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashboard_search_background"
+            app:iconifiedByDefault="false"
+            app:queryHint="Find your Room..."
+            app:searchIcon="@drawable/dashboard_search_icon" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_navigation_background_color">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/show_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

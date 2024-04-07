@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "75554715992",
+    "project_id": "find-your-room-b6302",
+    "storage_bucket": "find-your-room-b6302.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75554715992:android:af15281b808cee288b8d2d",
+        "android_client_info": {
+          "package_name": "com.example.findyourroom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjIYK86zSpm4heoDZgOoVGlNf4gBFVP_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

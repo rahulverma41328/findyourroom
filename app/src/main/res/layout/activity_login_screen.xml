@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/app_background_color"
+    tools:context=".LoginSignup.LoginScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login\n Account"
+            android:textAllCaps="true"
+            android:textSize="40dp"
+            android:fontFamily="@font/acme"
+            android:textColor="@color/app_text_color"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CustomEditText"
+                app:boxStrokeColor="@color/app_button_color"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconDrawable="@drawable/username_icon"
+                app:startIconTint="@color/app_text_color"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/app_text_color"
+                android:hint="email"
+                android:textColorHint="@color/app_text_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/app_text_color"
+                    android:fontFamily="@font/acme"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/app_text_color"
+                style="@style/CustomEditText"
+                app:boxStrokeColor="@color/app_button_color"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconDrawable="@drawable/password_icon"
+                app:startIconTint="@color/app_text_color"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/app_text_color"
+                android:hint="password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/app_text_color"
+                    android:fontFamily="@font/acme"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:onClick="goToDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/button_background"
+                android:text="Login"
+                android:textAllCaps="true"/>
+
+            <Button
+                android:onClick="goToSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="Create Account"
+                android:textColor="@color/app_text_color"
+                android:fontFamily="@font/acme"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

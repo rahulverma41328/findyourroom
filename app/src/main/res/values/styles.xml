@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/app_background_color</item>
+        <item name="android:statusBarColor">@color/app_navigation_background_color</item>
+        <item name="colorPrimaryDark">@color/app_background_color</item>
+        <item name="colorAccent">@color/app_button_color</item>
+    </style>
+
+    <!-- Menu Style -->
+    <style name="navigationTheme">
+        <!-- color of the text and icon when selected -->
+        <item name="colorPrimary">@color/app_background_color</item>
+
+        <!-- background color when selected -->
+        <item name="colorControlHighlight">@color/app_button_color</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Gets rid of the search icon -->
+        <item name="searchIcon">@drawable/dashboard_search_background</item>
+        <!-- Gets rid of the "underline" in the text -->
+        <item name="queryBackground">@drawable/dashboard_search_background</item>
+        <!-- Gets rid of the search icon when the SearchView is expanded -->
+        <item name="searchHintIcon">@null</item>
+        <!-- The hint text that appears when the user has not typed anything -->
+        <item name="queryHint">Find your Book...</item>
+        <item name="android:textColor">@color/app_button_color</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorControlNormal">@color/app_text_color</item>
+        <item name="colorControlActivated">@color/app_text_color</item>
+        <item name="hintTextColor">@color/app_text_color</item>
+        <item name="android:textCursorDrawable">@drawable/curser</item>
+        <item name="colorControlHighlight">@color/app_text_color</item>
+    </style>
+</resources>

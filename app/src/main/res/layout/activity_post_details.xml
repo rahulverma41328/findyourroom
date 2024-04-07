@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_activity_color"
+    android:scrollbars="none"
+    tools:context=".PostDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:elevation="10dp"
+            android:background="@drawable/post_detail_background"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:id="@+id/user_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/user_profile"
+                    app:civ_border_color="@color/app_text_color"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/user_image"
+                    android:fontFamily="@font/bungee"
+                    android:includeFontPadding="false"
+                    android:text="sdlfkj"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_details"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/acme"
+                android:text="7014934930"
+                android:textColor="@color/app_text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/post_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_no"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/acme"
+                android:text="suratgarh"
+                android:textColor="@color/app_text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_location"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/acme"
+                android:text="slfkjdsklfja"
+                android:textColor="@color/app_text_color"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

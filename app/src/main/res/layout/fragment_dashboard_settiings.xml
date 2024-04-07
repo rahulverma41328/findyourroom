@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background_color"
+    tools:context=".User.MainFragment.DashboardSettings">
+
+    <RelativeLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user_profile"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:fontFamily="@font/bungee"
+                android:textColor="@color/app_text_color"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/user_profile_image"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/profile_layout">
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/bungee"
+                android:padding="10dp"
+                android:text="Logout"
+                android:textColor="@color/app_text_color"
+                app:drawableStartCompat="@drawable/logout" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/bungee"
+                android:padding="10dp"
+                android:text="Website"
+                android:textColor="@color/app_text_color"
+                app:drawableStartCompat="@drawable/website" />
+
+            <TextView
+                android:id="@+id/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:background="@drawable/button_background"
+                android:padding="10dp"
+                android:layout_below="@+id/website"
+                android:layout_marginTop="10dp"
+                android:text="Privacy Ploicy"
+                android:textColor="@color/app_text_color"
+                app:drawableStartCompat="@drawable/privacy" />
+
+            <TextView
+                android:id="@+id/contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:background="@drawable/button_background"
+                android:padding="10dp"
+                android:layout_below="@+id/privacy_policy"
+                android:layout_marginTop="10dp"
+                android:text="contact us"
+                android:textColor="@color/app_text_color"
+                app:drawableStartCompat="@drawable/contact_us" />
+
+            <TextView
+                android:id="@+id/rate_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_us"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/bungee"
+                android:padding="10dp"
+                android:text="rate us"
+                android:textColor="@color/app_text_color"
+                app:drawableStartCompat="@drawable/rate_us" />
+
+            <TextView
+                android:id="@+id/donate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate_us"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/bungee"
+                android:padding="10dp"
+                android:text="donate us"
+                android:textColor="@color/app_text_color"
+                app:drawableStartCompat="@drawable/donate_us" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/company_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user_profile" />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/company_logo"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/bungee"
+                android:text="Developed By : WOLFCART"
+                android:textColor="@color/app_text_color"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
